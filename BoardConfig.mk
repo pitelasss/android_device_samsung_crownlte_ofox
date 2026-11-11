@@ -86,3 +86,6 @@ OF_STATUS_INDENT_RIGHT := 48
 OF_ALLOW_DISABLE_NAVBAR := 0
 OF_NO_TREBLE_COMPATIBILITY_CHECK := 1
 OF_QUICK_BACKUP_LIST := /boot;/data;
+
+# S Pen "pad" (rato virtual) -> nao mostrar cursor do rato
+TW_INPUT_BLACKLIST := "sec_e-pen-pad"
