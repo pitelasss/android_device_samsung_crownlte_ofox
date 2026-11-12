@@ -89,3 +89,6 @@ OF_QUICK_BACKUP_LIST := /boot;/data;
 
 # S Pen "pad" (rato virtual) -> nao mostrar cursor do rato
 TW_INPUT_BLACKLIST := "sec_e-pen-pad"
+
+# Samsung 9810: the torch is not a /sys/class/leds device -> hide the flashlight button
+OF_FLASHLIGHT_ENABLE := 0
