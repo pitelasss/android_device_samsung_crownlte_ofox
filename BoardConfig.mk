@@ -92,3 +92,8 @@ TW_INPUT_BLACKLIST := "sec_e-pen-pad"
 
 # Samsung 9810: the torch is not a /sys/class/leds device -> hide the flashlight button
 OF_FLASHLIGHT_ENABLE := 0
+
+# Battery % in the status bar: read /sys/class/power_supply/battery directly
+# (the health HAL path shows an empty/"!" battery on Exynos 9810)
+TW_USE_LEGACY_BATTERY_SERVICES := true
+TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery"
